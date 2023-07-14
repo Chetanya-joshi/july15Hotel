@@ -10,6 +10,7 @@ import bedImage from '../assets/bedroom2.jpg';
 import './Booking.css';
 
 
+
 // import { selectedDate } from './room1';
 
 function BookingRoom() {
@@ -18,7 +19,7 @@ function BookingRoom() {
 
   const [mm, setMM] = useState(data);
   const params = useParams();
-  const mm1 = mm.filter((datas) => datas.id == params.id);
+  const mm1 = mm.filter((datas) => datas.index == params.id);
 
 
 
@@ -101,7 +102,7 @@ function BookingRoom() {
 
                 <Col md={8} className="mt-5"  >
                   <div className="textheading mt-5" style={{color:'#fff' , width:'800px'}}>
-                    <h1 style={{fontSize:'70px' ,  width:'650px'}} className="mb-4">Sona A Luxury Hotel</h1>
+                    <h1 style={{fontSize:'70px' ,  width:'650px'}} className="mb-4">Lake A Luxury Hotel</h1>
 
                     <text style={{fontWeight:'bold',fontSize:'17px'}}>Here are the best hotel booking sites, including recommendations for international travel and for finding low-priced hotel rooms.Focus on something that makes the place special–either for you, or for the guests. It can be an amazing location (a place where you always wanted to work, and guests love to come)</text>
                     </div>
@@ -329,7 +330,24 @@ function BookingRoom() {
                   <text className="Heading-1 col-12 mb-3" style={{fontSize:'2.5rem'}}>Details</text>
 
                   <Col md={6}>
-                    <Image src={bedImage} style={{width:'100%'}}></Image>
+                  <Card style={{ height: "21rem" }}>
+            <div className="card-wrapper" style={{ height: "100%" }}>
+              <Card.Img
+                className="img-fluid"
+                src={data.imageSrc}
+                style={{ height: "100%" }}
+              />
+              <div className="overlay">
+                {/* <div className="content">
+                  <Card.Title className="title">Food & Drinks</Card.Title>
+                  <Card.Text className="text">
+                    Indulge in a delectable journey of freshness and culinary
+                    diversity.
+                  </Card.Text>
+                </div> */}
+              </div>
+            </div>
+          </Card>
                   </Col>
 
                   <Col md={6}>
@@ -364,20 +382,20 @@ function BookingRoom() {
 
 
                     <tr>
-                    <th>Childrean:-</th>
+                    <th>Children:-</th>
                     <th>{children}</th>
                     </tr>
 
 
                     <tr>
                     <th>Room Type:- </th>
-                    <th>{data.RoomType}</th>
+                    <th>{data.heading}</th>
                     </tr>
 
                     
                     <tr>
                     <th>Price Of Room:-</th>
-                    <th>₹ {data.charges} per Night</th>
+                    <th>₹ {data.price} per Night</th>
                     </tr>
 
                     <tr>
@@ -387,7 +405,7 @@ function BookingRoom() {
 
                     <tr>
                     <th>Total Price:- </th>
-                    <th>₹{Math.round(data.charges * 118/100)}</th>
+                    <th>₹ {Math.round(data.price * 118/100)} per Night</th>
                     </tr>
 
                    </tbody>

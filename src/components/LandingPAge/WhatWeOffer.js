@@ -1,6 +1,7 @@
 import React from "react";
 import { Card } from "react-bootstrap";
-import {  buffet, card1, pools } from "../../assets";
+import { buffet, card1, pools } from "../../assets";
+
 import "./offer.css";
 
 const Offer = () => {

@@ -8,6 +8,7 @@ import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import {Link} from "react-router-dom";
+import header from '../../../src/PNG_LH.png';
 import './offer.css';
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -35,7 +36,7 @@ const Header = () => {
           
           <Container fluid>
             <Navbar.Brand href="#">
-              <img src="PNG_LH.PNG" alt="" style={{width:"150px",height:"50px"}} />
+              <img src={header} alt="" style={{width:"150px",height:"50px"}} />
             </Navbar.Brand>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
             <Navbar.Offcanvas
@@ -74,6 +75,13 @@ const Header = () => {
                     Reservation{" "}
                     </Link>
                   </Nav.Link>
+
+                  {/* <Nav.Link className="headlink">
+                    <Link to="/cityofjoy" style={{textDecoration:'none' , color:'teal' , fontWeight:'700' }} className="head">
+                    City Of Joy{" "}
+                    </Link>
+                  </Nav.Link> */}
+
                   <Nav.Link href="#action2" className="headlink">
                     <Link to="/blogs" style={{textDecoration:'none' , color:'teal' , fontWeight:'700' }} className="head">
                     Blogs

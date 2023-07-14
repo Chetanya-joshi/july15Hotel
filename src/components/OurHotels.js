@@ -7,6 +7,8 @@ import VaayuCafe from '../assets/VaayuCafe.jpg';
 import HotelImage from '../assets/HotelImage.jpg';
 import './OurHotels.css';
 import Header from './LandingPAge/Header';
+import Footer from '../components/LandingPAge/Footer';
+
 
 export default function OurHotels() {
   return (
@@ -87,6 +89,8 @@ export default function OurHotels() {
 
 
       </Container>
+
+      <Footer />
     </div>
   )
 }

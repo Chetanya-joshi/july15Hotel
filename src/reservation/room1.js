@@ -16,6 +16,7 @@ import Footer from '../components/LandingPAge/Footer';
 // import Footer from './Footer';
 
 
+
 const Room1 = () => {
   const [mm, setMM] = useState(data);
   const params = useParams();
