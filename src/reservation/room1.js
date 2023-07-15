@@ -136,7 +136,7 @@ const Room1 = () => {
                     </Col>
 
                     <Col md-4>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3505.7875092444688!2d77.19472507518817!3d28.51604017572857!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce1a14b923753%3A0x3f6fe0a8810d3bf5!2sLa%20Vie%20En%20Rose%20-%20Co-working%20Space%20%26%20Virtual%20Office!5e0!3m2!1sen!2sin!4v1688111054323!5m2!1sen!2sin" width="600" height="450" style={{border:0}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3685.76577774632!2d88.36443127497452!3d22.512969379534216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a027777f653aee3%3A0x3647fb0b388d2c28!2sThe%20Lake%20Hotel!5e0!3m2!1sen!2sin!4v1689400042161!5m2!1sen!2sin" width="600" height="450" style={{"border":"0"}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </Col>
                   </Row>
 

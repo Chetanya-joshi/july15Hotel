@@ -14,3 +14,40 @@
     background:white !important;
     color:black !important;
   }
+
+  @media screen and (max-width:500px){
+    .mt-3{
+      padding-bottom:25px;
+    }
+
+    .lakeText{
+      padding-top:25px;
+    }
+
+    .img{
+      height:300px;
+    }
+
+    .img2{
+      height:500px
+    }
+  }
+
+
+  @media screen and (max-width:768px){
+    .mt-3{
+      padding-bottom:25px;
+    }
+
+    .lakeText{
+      padding-top:25px;
+    }
+
+    .img{
+      height:450px;
+    }
+
+    .img2{
+      height:600px
+    }
+  }

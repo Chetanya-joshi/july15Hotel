@@ -11,7 +11,7 @@ import Room1 from "../reservation/room1";
 // import BookingRoom from "../h/BookingRoom";
 // import BookRoute from "../h/BookRoute";
 import OurHotels from "../components/OurHotels";
-// import TheCityJoy from "../components/TheCityJoy";
+import TheCityJoy from "../components/TheCityJoy";
 
 
 const AppRoute = () => {
@@ -26,7 +26,7 @@ const AppRoute = () => {
         <Route path="/room1/:id" element={<Room1 />} />
         <Route path="/BookingRoom/:id" element={<BookingRoom/>} />
         <Route path="/OurRoom" element={<OurHotels />} />
-        {/* <Route path="/cityofjoy" element={<TheCityJoy /> } /> */}
+        <Route path="/cityofjoy" element={<TheCityJoy /> } />
       </Routes>
     </>
   );

@@ -13,11 +13,11 @@ import { AiOutlineLinkedin } from "react-icons/ai";
 // import CommonButton from "../Button/CommonButton";
 import { Container, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
-
+import './Footer.css';
 const Footer = () => {
   return (
     <footer className="page-footer font-small blue ">
-      <div className="row m-0 py-3 py-md-4 py-lg-5 d-flex justify-content-center">
+      <div className="row m-0 py-3 py-md-4 py-lg-3 d-flex justify-content-center">
         <div className="col-12 col-lg-5 py-3 py-lg-0 ">
           <div className="row  d-flex justify-content-start  align-items-start ">
             <div
@@ -33,19 +33,19 @@ const Footer = () => {
               >
               </text>
             </div> */}
-            <div className="col-8 py-1 d-none d-sm-flex justify-content-start">
-              <span className="Social-Icon mx-3">
+            <div className="col-8 py-1 d-none d-sm-flex justify-content-start pt-3 ">
+              <Link to="https://www.facebook.com/thelakehotelkolkata?mibextid=ZbWKwL" target="_blank" style={{textDecoration:'none' , color:'black'}}>
+              <span className="Social-Icon mx-3" style={{cursor:'pointer'}} >
                 <FiFacebook />
               </span>
-              <span className="Social-Icon mx-3">
-                <FiTwitter />        
-              </span>
-              <span className="Social-Icon mx-3">
+              </Link>
+
+              <Link to="https://instagram.com/thelakehotelkolkata_?igshid=NjIwNzIyMDk2Mg==" target="_blank" style={{textDecoration:'none' , color:'black'}}>
+              <span className="Social-Icon mx-3" style={{cursor:'pointer'}}>
                 <FiInstagram />
               </span>
-              <span className="Social-Icon mx-3">
-                <AiOutlineLinkedin />
-              </span>
+              </Link>
+             
             </div>
           </div>
         </div>
@@ -54,8 +54,8 @@ const Footer = () => {
           <div className="row d-flex justify-content-around justify-content-md-center m-0">
           
             <div className="col-12 col-sm-5 text-center text-sm-start">
-              <div className="row ">
-                <text className="Heading-1 py-2" style={{ fontWeight: "bold" }}>
+              <div className="row " style={{fontWeight:'bold' , textAlign:'center'}} >
+                <text className="Heading-1 py-2" style={{ fontWeight: "bold" , color:'#000'}}>
                   Quick links
                 </text>
                 <Link
@@ -67,10 +67,24 @@ const Footer = () => {
                 </Link>
                 <Link
                   className="py-1"
-                  to="/about"
+                  to="/OurRoom"
                   style={{ textDecoration: "none", color: "#fff" }}
                 >
-                  About
+                  Our Hotel
+                </Link>
+                <Link
+                  className="py-1"
+                  to="/reservation"
+                  style={{ textDecoration: "none", color: "#fff" }}
+                >
+                  The City Of Joy
+                </Link>
+                <Link
+                  className="py-1"
+                  to="/reservation"
+                  style={{ textDecoration: "none", color: "#fff" }}
+                >
+                  Vayu Cafe
                 </Link>
                 <Link
                   className="py-1"
@@ -96,8 +110,8 @@ const Footer = () => {
               </div>
             </div>
             <div className="col-12 col-sm-5 text-center text-sm-start">
-              <div className="row ">
-                <text className="Heading-1 py-2" style={{ fontWeight: "bold" }}>
+              <div className="row " style={{fontWeight:'bold' , textAlign:'center'}}>
+                <text className="Heading-1 py-2" style={{ fontWeight: "bold" , color:'#000' }}>
                   Services
                 </text>
                 <Link
@@ -156,11 +170,14 @@ const Footer = () => {
       </div>
       <hr />
 
-      <div className="row m-0 py-2 py-md-3 d-flex justify-content-center ">
+      <div className="row m-0 py-2 py-md-3 d-flex justify-content-center text-center ">
+      <Link to="https://goo.gl/maps/yyHrFVGuGZg1f9ue6" target="_blank" style={{textDecoration:'none'}}> <span style={{fontWeight:'bold' , color:'#222' }} className="pt-3 address">38 3A Gariahat Road, Road, opposite to AMRI Hospital, Dhakuria, South End Park, Keyatala, Kolkata, West Bengal 700068</span></Link>
+
         <text
-          className="Text-1"
+          className="Text-1 footer_text"
           style={{
             textAlign: "center",
+            fontWeight:'600'
           }}
         >
           © 2023 Atraski | All rights reserved

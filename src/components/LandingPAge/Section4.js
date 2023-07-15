@@ -54,7 +54,7 @@ const Section4 = () => {
           src="instagram.jpg"
           alt=""
           className="img-fluid"
-          style={{ widh: " 100%", maxHeight: "20rem", borderRadius: "10px" }}
+          style={{ width: "80%", maxHeight: "20rem", borderRadius: "10px" }}
         />
       </div>
       <div className="col-11  d-block d-lg-none ps-0 ps-sm-4 ">

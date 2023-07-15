@@ -60,14 +60,24 @@ const Header = () => {
                     Home
                     </Link>
                   </Nav.Link>
-                  <Nav.Link className="headlink">
+                  {/* <Nav.Link className="headlink">
                     <Link to="/about" style={{textDecoration:'none' , color:'teal' , fontWeight:'700' }} className="head">
                     About
                     </Link>
-                  </Nav.Link>
+                  </Nav.Link> */}
                   <Nav.Link className="headlink">
                     <Link to="/OurRoom" style={{textDecoration:'none' , color:'teal' , fontWeight:'700' }} className="head">
                     Our Hotel
+                    </Link>
+                  </Nav.Link>
+                  <Nav.Link className="headlink">
+                    <Link to="/cityofjoy" style={{textDecoration:'none' , color:'teal' , fontWeight:'700' }} className="head">
+                    The City Of Joy
+                    </Link>
+                  </Nav.Link>
+                  <Nav.Link className="headlink">
+                    <Link to="/cityofjoy" style={{textDecoration:'none' , color:'teal' , fontWeight:'700' }} className="head">
+                    Vaayu Cafe
                     </Link>
                   </Nav.Link>
                   <Nav.Link className="headlink">

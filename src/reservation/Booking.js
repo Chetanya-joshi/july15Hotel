@@ -31,7 +31,7 @@ import RoomList from './Roomlist';
          <Carousel className="section">
       <Carousel.Item interval={1000}>
         <img
-          className="d-block w-100"
+          className="d-block w-100 img-fluid"
           src={img1}
           alt="First slide"
           style={{width:'100vw' , height:'95vh'}}
@@ -43,7 +43,7 @@ import RoomList from './Roomlist';
       </Carousel.Item>
       <Carousel.Item interval={1000}>
         <img
-          className="d-block w-100"
+          className="d-block w-100 img-fluid"
           src={img2}
           alt="Second slide"
           style={{width:'100vw' , height:'95vh'}}
@@ -55,7 +55,7 @@ import RoomList from './Roomlist';
       </Carousel.Item>
       <Carousel.Item>
         <img
-          className="d-block w-100"
+          className="d-block w-100 img-fluid"
           src={img3}
           alt="Third slide"
           style={{width:'100vw' , height:'95vh'}}
