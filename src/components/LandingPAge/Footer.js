@@ -14,6 +14,8 @@ import { AiOutlineLinkedin } from "react-icons/ai";
 import { Container, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import './Footer.css';
+import footerimg from '../../assets/PNG_LH.png';
+
 const Footer = () => {
   return (
     <footer className="page-footer font-small blue ">
@@ -24,7 +26,7 @@ const Footer = () => {
               className="col-8 py-2 text-lg-start text-sm-center d-none d-sm-block"
               style={{ background: "transparent" }}
             >
-              <img src="PNG_LH.png" alt="" style={{ width: "300px" }} />
+              <img src={footerimg} alt="" style={{ width: "300px" }} />
             </div>
             {/* <div className="col-8 py-2 d-none d-sm-block">
               <text
