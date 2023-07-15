@@ -92,11 +92,7 @@ const Header = () => {
                     </Link>
                   </Nav.Link> */}
 
-                  <Nav.Link href="#action2" className="headlink">
-                    <Link to="/blogs" style={{textDecoration:'none' , color:'teal' , fontWeight:'700' }} className="head">
-                    Blogs
-                    </Link>
-                  </Nav.Link>
+                 
                                   </Nav>
                 <Form className="d-flex">
                   {/* <Form.Control
