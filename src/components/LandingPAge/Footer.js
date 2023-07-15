@@ -109,48 +109,7 @@ const Footer = () => {
                 </Link>{" "}
               </div>
             </div>
-            <div className="col-12 col-sm-5 text-center text-sm-start">
-              <div className="row " style={{fontWeight:'bold' , textAlign:'center'}}>
-                <text className="Heading-1 py-2" style={{ fontWeight: "bold" , color:'#000' }}>
-                  Services
-                </text>
-                <Link
-                  className="py-1"
-                  to="/about"
-                  style={{ textDecoration: "none", color: "#fff" }}
-                >
-                  About Hotel
-                </Link>
-                <Link
-                  className="py-1"
-                  to="/reservation"
-                  style={{ textDecoration: "none", color: "#fff" }}
-                >
-                  Food & drinks
-                </Link>
-                <Link
-                  className="py-1"
-                  to="/about"
-                  style={{ textDecoration: "none", color: "#fff" }}
-                >
-                  City tour
-                </Link>
-                <Link
-                  className="py-1"
-                  to="/reservation"
-                  style={{ textDecoration: "none", color: "#fff" }}
-                >
-                  Breakfast
-                </Link>
-                <Link
-                  className="py-1"
-                  to="/reservation"
-                  style={{ textDecoration: "none", color: "#fff" }}
-                >
-                  Comfortable suite
-                </Link>
-              </div>
-            </div>
+            
             <div className="col-12 col-sm-5 text-center text-sm-start py-3  d-block d-sm-none">
               <span className="Social-Icon mx-1 ">
                 <FiFacebook />
