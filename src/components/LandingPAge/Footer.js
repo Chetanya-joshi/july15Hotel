@@ -93,13 +93,7 @@ const Footer = () => {
                 >
                   Reservations
                 </Link>
-                <Link
-                  to="/blogs"
-                  className="py-1"
-                  style={{ textDecoration: "none", color: "#fff" }}
-                >
-                  Blogs
-                </Link>
+                
                 <Link
                   to="/contactus"
                   className="py-1"
