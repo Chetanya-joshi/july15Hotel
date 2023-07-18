@@ -12,6 +12,7 @@ import god from '../assets/subhomahalaya.jpg';
 import durgaMa from '../assets/durgaMa.jpg';
 import './TheCityJoy.css';
 import Header from './LandingPAge/Header';
+import {Link} from 'react-router-dom';
 
 
 export default function TheCityJoy() {
@@ -56,10 +57,11 @@ export default function TheCityJoy() {
     <Header />
     <div className="App">
       <Slider {...settings}>
-      <div className="card">
+        <Link to='/temple'>
+      <div className="card" >
         <div className="card-top">
           <img src={temple} alt="" />
-          <h1>Japanese Temple in Kolkata - Nipponzan Myohoji Buddhist Temple
+          <h1 >Japanese Temple in Kolkata - Nipponzan Myohoji Buddhist Temple
 
 </h1>
           <div className="card-bottom">
@@ -68,8 +70,9 @@ export default function TheCityJoy() {
           </div>
         </div>
       </div>
+      </Link>
 
-
+<Link to="/rabindralake">
       <div className="card">
         <div className="card-top">
           <img src={RabindraLake} alt="" />
@@ -80,8 +83,9 @@ export default function TheCityJoy() {
           </div>
         </div>
       </div>
+      </Link>
 
-
+<Link to="/museum">
       <div className="card">
         <div className="card-top">
           <img src={Alipore} alt="" />
@@ -92,7 +96,9 @@ export default function TheCityJoy() {
           </div>
         </div>
       </div>
+      </Link>
 
+      <Link to="/food">
       <div className="card">
         <div className="card-top">
           <img src={food} alt="" />
@@ -103,6 +109,9 @@ export default function TheCityJoy() {
           </div>
         </div>
       </div>
+      </Link>
+
+      <Link to="/mahalya">
 
       <div className="card">
         <div className="card-top">
@@ -114,7 +123,9 @@ export default function TheCityJoy() {
           </div>
         </div>
       </div>
+      </Link>
 
+      <Link to="/durgapooja">
 
       <div className="card">
         <div className="card-top">
@@ -128,6 +139,8 @@ export default function TheCityJoy() {
           </div>
         </div>
       </div>
+
+      </Link>
 
 
       
