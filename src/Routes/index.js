@@ -12,7 +12,12 @@ import Room1 from "../reservation/room1";
 // import BookRoute from "../h/BookRoute";
 import OurHotels from "../components/OurHotels";
 import TheCityJoy from "../components/TheCityJoy";
-
+import Blog1 from "../components/Blog1";
+import RabindraLake from "../components/RabindraLake";
+import Museum from "../components/museum";
+import Food from "../components/Food";
+import Mahalya from "../components/Mahalya";
+import DurgaPooja from "../components/durgapooja";
 
 const AppRoute = () => {
   return (
@@ -27,6 +32,13 @@ const AppRoute = () => {
         <Route path="/BookingRoom/:id" element={<BookingRoom/>} />
         <Route path="/OurRoom" element={<OurHotels />} />
         <Route path="/cityofjoy" element={<TheCityJoy /> } />
+        <Route path="/temple" element={<Blog1 />} />
+        <Route path="/rabindralake" element={<RabindraLake />} />
+        <Route path="/museum" element={<Museum />} />
+        <Route path="/food" element={<Food />} />
+        <Route path="/mahalya" element={<Mahalya />} />
+        <Route path="/durgapooja" element={<DurgaPooja />} />
+
       </Routes>
     </>
   );
